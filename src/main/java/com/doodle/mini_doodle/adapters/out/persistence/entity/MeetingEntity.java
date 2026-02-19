@@ -8,10 +8,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Entity
-@Table(name = "meetings", indexes = {
-        @Index(name = "idx_meetings_host", columnList = "host_user_id"),
-        @Index(name = "idx_meetings_start", columnList = "start_time")
-})
+@Table(name = "meetings")
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor

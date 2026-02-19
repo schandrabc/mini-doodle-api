@@ -7,13 +7,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 @Entity
-@Table(name = "slots", indexes = {
-        @Index(name = "idx_slots_owner_start", columnList = "owner_id,start_time"),
-        @Index(name = "idx_slots_owner_status", columnList = "owner_id,status"),
-        @Index(name = "idx_slots_meeting", columnList = "meeting_id")
-}, uniqueConstraints = {
-        @UniqueConstraint(name = "uk_slots_owner_exact", columnNames = {"owner_id", "start_time", "end_time"})
-})
+@Table(name = "slots")
 @Getter
 @Setter
 @NoArgsConstructor
